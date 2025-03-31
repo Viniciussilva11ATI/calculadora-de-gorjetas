@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./images/favicon-32x32.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
-    <script src="main.js" defer></script>
+    <script src="main.js" def></script>
     <title>Tip calculator</title>
 </head>
 <body>
@@ -21,7 +21,7 @@
 
                 <div class="input-box">
                     <img src="./images/icon-dollar.svg" alt="icon dollar">
-                    <input type="number" id="bill" placeholder="0">
+                    <input oninput="receiveBillValue()" type="number" id="bill" placeholder="0">
                 </div>
             </div>
 
@@ -29,21 +29,21 @@
                 <strong>Select tip 0%</strong>
 
                 <div>
-                    <button>5%</button>
-                    <button>10%</button>
-                    <button>15%</button>
-                    <button>25%</button>
-                    <button>50%</button>
+                    <button onclick="receiveTipPercententageValue(5)" id="button-5">5%</button>
+                    <button onclick="receiveTipPercententageValue(10)" id="button-10">10%</button>
+                    <button onclick="receiveTipPercententageValue(15)" id="button-15">15%</button>
+                    <button onclick="receiveTipPercententageValue(25)" id="button-25">25%</button>
+                    <button onclick="receiveTipPercententageValue(50)" id="button-50">50%</button>
                     <input type="number" id="custom-tip" placeholder="Custom">
                 </div>
-            </div>
+            </div> 
 
             <div class="poeple">
                 <strong>Number of people</strong>
 
                 <div class="input-box">
                     <img src="./images/icon-person.svg" alt="icon person">
-                    <input type="number" id="people" placeholder="0">
+                    <input oninput="receiveNumberOfPeopleValue()" type="number" id="people" placeholder="0">
                 </div>
             </div>
         </section>
