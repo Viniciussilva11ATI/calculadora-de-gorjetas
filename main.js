@@ -26,6 +26,7 @@ function receiveTipPercententageValue(value) {
 
     buttonSelected = document.querySelector('#button-${value}')
     buttonSelected.classList.add("button-selected")
+    buttonSelected.style.backgroundColor = "var(--topaz)"; 
 
     calculateResults()
 }
@@ -55,6 +56,16 @@ function receiveTipPercententageValue(value) {
             strongAmountTotal.innerText = '$${totalPerson.toFixed(2)}'
         }
     }
+
+    function reset() {
+        document.querySelector("#bill").value = ""
+        bill = 0
+
+        document.querySelector("#people").value =""
+        numberOfPeople = 0
+    }
+
+
 
         
 
